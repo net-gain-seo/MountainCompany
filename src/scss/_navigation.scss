@@ -1,0 +1,111 @@
+.main-nav {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        display: block;
+        // transition: all 0.2s ease-in-out;
+    }
+    > ul {
+        margin-right: 0.5rem;
+        float: right;
+        // Top level
+        > li {
+            display: inline-block;
+            position: relative;
+            line-height: 45px;
+            margin-bottom: 0px;
+            transition: box-shadow 0.2s ease-in-out;
+            > a {
+                padding: 0 1rem;
+                color: $primaryColor;
+                &:hover {
+                    color: $secondaryColor;
+                }
+            }
+            // Second level menu
+            .submenu {
+                position: absolute;
+                line-height: 1.5;
+                width: 250px;
+                background-color: $lightGray;
+                box-shadow: 2px 2px 20px rgba(black,0.25);
+                max-height: 0;
+                z-index: 10;
+                overflow: hidden;
+                transition: max-height 0s;
+                ul {
+                    padding-top: 30px;
+                    border-top: 3px solid $primaryColor;
+                }
+                li {
+                    display: block;
+                    a {
+                        padding: 0.25rem 1.25rem;
+
+                        // second level menu hover/active
+                        &:hover,
+                        &.active {
+                            background-color: $primaryColor;
+                            color: #fff;
+                        }
+                    }
+                }
+            } // end second level ul
+            // Show second level menu on hover
+            &:hover {
+                .submenu {
+                    z-index: 10;
+                    max-height: 1000px;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            &:hover,
+            &.active {
+                box-shadow: inset 0 -6px 0 $primaryColor;
+            }
+        } // end top level li
+    } // end top level ul
+}
+// Get a Quote button
+.get-quote {
+    display: inline-block;
+    line-height: 45px;
+    padding: 0 1rem;
+    background-color: $secondaryColor;
+    color: #fff;
+    white-space: nowrap;
+    &:hover {
+        color: #fff;
+        background-color: darken($primaryColor,8%);
+    }
+    &:focus {
+        color: #fff;
+    }
+}
+.get-quote {
+    background-color: $secondaryColor;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+    margin-left: 40px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: -1px;
+    width: inherit;
+    float: right;
+    a{
+      color: white;
+      padding: 1px 20px;
+    }
+}
+.get-quote:hover {
+    background-color: $primaryColor;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-box-shadow: inset 0 0px 0 #2a3249;
+    box-shadow: inset 0 0px 0 #2a3249;
+    a{
+      color: white;
+    }
+}

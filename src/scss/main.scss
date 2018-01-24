@@ -1,0 +1,42 @@
+/** COLORS */
+$textColor     : #000000;
+$primaryColor  : #2a3249; // Dark Blue
+$secondaryColor: #BAAD00; // Dark Yellow
+$darkGray      : #68656e;
+$mediumGray    : #aba1a0; // footer contact bg
+$lightGray     : #f7efed;
+$linkColor     : $secondaryColor;
+
+$screen-lg-min: 1199px;
+$screen-lg-max: ($screen-lg-min - 1);
+$screen-md-min: 992px;
+$screen-md-max: ($screen-md-min - 1);
+$screen-sm-min: 768px;
+$screen-sm-max: ($screen-sm-min - 1);
+$screen-xsm-min: 576px;
+$screen-xsm-max: ($screen-xsm-min - 1);
+
+/** FONT SIZES */
+
+$htmlfs          : 10px; //10px
+$fsBody          : 2rem; // 20px
+$fsTitle         : 5rem; // 50px
+$fsH1            : 3rem; // 30px
+$fsH2            : 2.7rem; // 27px
+$fsH3            : 2.2rem; // 22px
+$fsH4            : $fsBody; // 20px
+
+/** PARTIALS */
+@import "base";
+@import "header";
+@import "forms";
+@import "navigation";
+@import "mobile_nav";
+@import "content";
+@import "blog";
+@import "footer";
+@import "sliders";
+@import "slides";
+@import "overrides";
+@import "ie";
+@import "responsive";
