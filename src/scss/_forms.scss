@@ -8,7 +8,7 @@ input[type="search"],
 textarea {
     display: block;
     width: 100%;
-    height: 3rem;
+    height: 5rem;
     border-radius: 0px;
     box-shadow: none;
     background-image: none;
@@ -16,8 +16,7 @@ textarea {
     font-family: inherit;
     font-size: 0.875rem;
     padding-right: 0.5rem;
-    padding-left: 0.5rem;
-
+    padding-left: 1.5rem;
     background-color: #fff;
     border: 1px solid #eeeeee;
     color: rgba(0, 0, 0, 0.75);
@@ -134,7 +133,6 @@ select {
         color: $darkGray;
     }
 }
-
 .footer-form {
     display: flex;
     flex-flow: row wrap;
@@ -154,11 +152,8 @@ select {
     .submit-container {
         flex: 1 0 100%;
         margin-top: 2rem;
-        .btn {
-            font-family: "Oswald", sans-serif;
-            font-weight: bold;
-            padding: 0.75rem 3rem;
-            font-size: 1.4rem;
+        .button{
+          padding: 10px 80px;
         }
         // submit button container inserted by CF7
         > p {
@@ -192,17 +187,17 @@ select {
     input[type="number"],
     input[type="search"],
     textarea {
-        font-size: 1.15rem;
+        font-size: 2rem;
         border-width: 2px;
         border-color: #fff;
-        background-color: transparent;
-        color: #fff;
+        background-color: white;
+        color: $darkGray;
     }
     option {
         color: $darkGray;
     }
     ::-webkit-input-placeholder {
-        color: #fff;
+        color: $darkGray;
     }
     div.wpcf7-response-output {
         margin: 2rem auto;

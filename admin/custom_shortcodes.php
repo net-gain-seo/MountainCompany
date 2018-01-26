@@ -166,11 +166,10 @@ function testimonial_slider($atts) {
     $return = '';
 
     $return .= '<div id="testimonials" class="testimonials-slider">';
-
     foreach( $query->posts as $post ) {
         $excerpt = str_replace('"', '', $post->post_content);
-        $excerpt = preg_replace( '/\s+?(\S+)?$/', '', substr( $excerpt, 0, 188 ) ) . '...&quot; <a href="https://www.bins4shredding.com/testimonials/">Read more &raquo;</a>';
-        $return .= '<div class="testimonial"><p>&quot;' . $excerpt . '</p><p>' . $post->post_title . '</p></div>';
+        //$excerpt = preg_replace( '/\s+?(\S+)?$/', '', substr( $excerpt, 0, 188 ) ) . '...&quot; <a href="https://www.bins4shredding.com/testimonials/">Read more &raquo;</a>';
+        $return .= '<div class="testimonial"><p>' . $excerpt . '</p><p class="author">' . $post->post_title . '</p></div>';
     }
 
     $return .= '</div><button type="button" class="btn btn-main slick-testimonial-prev">&lt;</button><button type="button" class="btn btn-main slick-testimonial-next">&gt;</button>';

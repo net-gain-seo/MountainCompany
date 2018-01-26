@@ -13,7 +13,7 @@
 <header class="container-fluid site-header">
     <div class="container flex-header">
         <div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a></div>
-        <div class="stickylogo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo-sm.png" alt=""></a></div>
+        <div class="stickylogo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a></div>
         <div class="header-block">
             <div class="inner-block">
                 <div class="phone"><a href="tel:18557924050">Call 888-222-3344</a></div>

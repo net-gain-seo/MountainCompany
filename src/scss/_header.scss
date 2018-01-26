@@ -1,3 +1,6 @@
+body.sticky-header{
+  margin-top: 220px;
+}
 .site-header {
 
 }
@@ -63,7 +66,7 @@
 .sticky-header {
     .site-header {
         position: fixed;
-        z-index: 99997;
+        z-index: 999999;
         left: 0;
         top: 0;
         width: 100%;
@@ -92,7 +95,7 @@
         left: auto;
         opacity: 1;
         img{
-          width: 100px;
+          width: 160px;
           position: absolute;
           top: 0px;
         }
