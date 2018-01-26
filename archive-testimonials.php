@@ -16,15 +16,12 @@
 
         <div class="container">
             <article>
-
-                <div class="the-testimonial">
-                    <?php the_content(); ?>
-                </div>
-
                 <div class="txt-primary">
                     <?php the_title(); ?>
                 </div>
-
+                <div class="the-testimonial">
+                    <?php the_content(); ?>
+                </div>
 
             </article>
         </div>

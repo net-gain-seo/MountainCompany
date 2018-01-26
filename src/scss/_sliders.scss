@@ -87,9 +87,10 @@
     margin-left: auto;
 }
 .testimonialtitle{
-  color: black;
-  font-size: 4.5rem;
-  margin-bottom: 6rem;
+  color: white;
+  text-align: center;
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
 }
 .testimonial-slide img{
   float: left;
@@ -99,33 +100,77 @@
   clear: none;
   width: 70px;
 }
-.testimonial-content {
+.testimonial {
   float: left;
   display: inline-block;
   clear: none;
   width: 100%;
   text-align: center;
     p {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
       line-height: 1.5;
+      color: white;
+      font-style: italic;
+      font-family: 'Lato', arial;
+      font-weight: 300;
+  }
+  .author{
+    font-style: normal;
+    font-weight: 300;
   }
 }
 .testimonial-author{
   font-size: 1.8rem!important;
   font-style: italic;
 }
-.testimonials {
-    h1,h2,h3 {
-        margin-top: 55px;
-        + p {
-            font-style: italic;
-        }
+.testimonials-c { // container
+    padding: 50px 0;
+    h1 {
+        margin-bottom: 1.5rem;
+        color: $secondaryColor;
+        padding-left: 6%;
     }
-    .testimonial-author {
-        margin-bottom: 35px;
+    .btn-main {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background: none;
+      cursor: pointer;
+      font-family: 'Oswald', 'lato', arial;
+      padding: 2rem 1.5rem;
+      padding-top: 0.5rem;
+      margin: 0px;
+      text-align: center;
+      height: auto;
+      vertical-align: top;
+      float: left;
+      font-size: 4rem;
+      font-weight: 100;
+      line-height: 0.5 !important;
+      background-color: $secondaryColor;
+      border: 0px solid #aba1a0;
+      color: white !important;
+      -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.15);
+      box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    }
+    .slick-testimonial-prev {
+        left: 0;
+    }
+    .slick-testimonial-next {
+        right: 0;
     }
 }
+.testimonials-slider {
+    display: none;
+    max-width: 88%;
+    margin: auto;
+}
+
+
+
+
 .halfslider {
     margin: 0;
     .whitefade {
