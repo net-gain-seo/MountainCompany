@@ -30,31 +30,33 @@ a {
         color: $primaryColor;
     }
 }
-
-h1,
-h2,
-.title {
-    font-weight: 700;
+.largetitle{
+  font-size: $fsTitle;
 }
 h1 {
     font-family: 'Anton', sans-serif;
     font-size: $fsH1;
+    line-height: 1.5;
+    margin-bottom: 2rem;
 }
-
 h2,
 h3 {
     font-family: 'Anton', sans-serif;
     font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2rem;
 }
-
 h2 {
     font-size: $fsH2;
 }
-
 h3 {
     font-size: $fsH3;
 }
-
+p{
+  font-size: $fsBody;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
 .title {
     font-family: 'Anton', sans-serif;
     font-size: $fsTitle;
@@ -89,7 +91,7 @@ li{
   margin-bottom: 0.5rem;
 }
 .row{
-  padding: 40px 0px;
+  padding: 60px 0px;
 }
 .padding100{
   padding: 100px 0px;
@@ -165,9 +167,6 @@ li{
 }
 .blackText{
   color: black!important;
-}
-.greenText{
-  color: #3CA417!important;
 }
 .primaryColor{
   color: $primaryColor;

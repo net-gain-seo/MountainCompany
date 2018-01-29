@@ -17,9 +17,10 @@
             position: relative;
             line-height: 45px;
             margin-bottom: 0px;
+            margin-left: 15px;
             transition: box-shadow 0.2s ease-in-out;
             > a {
-                padding: 0 1rem;
+                padding: 0 0rem;
                 color: $primaryColor;
                 &:hover {
                     color: $secondaryColor;
@@ -64,7 +65,9 @@
             }
             &:hover,
             &.active {
-                box-shadow: inset 0 -6px 0 $primaryColor;
+                box-shadow: inset 0 -6px 0 $secondaryColor;
+                padding: 0px 0px;
+
             }
         } // end top level li
     } // end top level ul
@@ -90,13 +93,18 @@
     color: white;
     transition: background-color 0.2s ease-in-out;
     margin-left: 40px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Anton', sans-serif;
     margin-bottom: -1px;
     width: inherit;
+    font-size: 2.7rem;
+    padding: 0px 25px;
     float: right;
-    a{
-      color: white;
-      padding: 1px 20px;
+    &:hover {
+        color: #fff;
+        background-color: darken($primaryColor,8%);
+    }
+    &:focus {
+        color: #fff;
     }
 }
 .get-quote:hover {

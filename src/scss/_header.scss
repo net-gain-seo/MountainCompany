@@ -112,22 +112,23 @@ body.sticky-header{
     position: relative;
     overflow: hidden;
     .mast-overlay {
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translate(0,-50%);
-        color: #fff;
-        font-family: "Oswald", sans-serif;
+      position: absolute;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fff;
+      top: 50%;
+      right: -15%;
+      left: -15%;
+      font-family: 'Anton', sans-serif;
     }
     h1 {
-        font-size: 2.65rem;
-        font-weight: bold;
-        margin-bottom: 2rem;
+        font-size: 5rem;
+        margin-bottom: 2.5rem;
     }
     h2,
     p {
-        font-weight: bold;
         margin-bottom: 1.5rem;
+        font-size: 2.7rem;
         &:last-child {
             margin-bottom: 0;
         }

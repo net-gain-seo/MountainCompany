@@ -88,7 +88,8 @@ select {
 }
 
 .popover-form {
-    width: 90%;
+    width: 100%;
+    padding: 0px 10px;
     margin: auto;
     select,
     input[type="text"],
@@ -98,24 +99,23 @@ select {
     input[type="number"],
     input[type="search"],
     textarea {
-        height: 2.6rem;
+        height: 4rem;
         margin-top: 0.25rem;
         background-color: $lightGray;
         border-color: transparent;
         border-width: 1px;
         color: $textColor;
-        font-size: 1rem; // 16px
+        font-size: 1.6rem;
+        padding: 0px 10px;
     }
     textarea {
-        min-height: 4rem;
+        min-height: 8rem;
     }
     .submit-container {
-        .btn {
-            font-family: "Oswald", sans-serif;
-            font-weight: bold;
-            margin-top: 1.5rem;
-            padding-left: 2.5rem;
-            padding-right: 2.5rem;
+        .button {
+            padding: 2px 50px;
+            float: left;
+            clear: both;
         }
         > .wpcf7-form-control-wrap {
             // outline: 1px solid #000;
@@ -125,13 +125,22 @@ select {
         .popover-recaptcha {
             transform: scale(0.68);
             transform-origin: 0px 0px;
+            float: left;
+            clear: both;
         }
     }
     label {
         display: block;
-        font-size: 0.9rem;
+        font-size: 1.6rem;
         color: $darkGray;
     }
+}
+#popForm{
+  .modal-header.popover-header{
+    padding: 15px 25px !important;
+    padding-bottom: 0px!important;
+    border-bottom: 0px;
+  }
 }
 .footer-form {
     display: flex;
@@ -153,7 +162,7 @@ select {
         flex: 1 0 100%;
         margin-top: 2rem;
         .button{
-          padding: 10px 80px;
+          padding: 5px 60px;
         }
         // submit button container inserted by CF7
         > p {
@@ -177,7 +186,6 @@ select {
     }
     iframe {
         position: relative;
-        // bottom: 16px;
     }
     select,
     input[type="text"],

@@ -27,7 +27,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header popover-header">
-                <h1 class="modal-title title">Get a Quote</h1>
+                <h1 class="modal-title title">Get A Quote</h1>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -41,6 +41,7 @@
         </div>
     </div>
 </div>
+<a href="#" class="scrollToTop">&uarr;</a>
 <div id="refContainer" class="container" style="visibility: hidden;"></div>
 <div id="openNavOverlay"></div>
 <div id="closeNav" class="close-nav">Close <i class="fa fa-times"></i></button></div>
