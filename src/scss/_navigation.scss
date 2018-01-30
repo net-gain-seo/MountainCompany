@@ -27,7 +27,7 @@
                 }
             }
             // Second level menu
-            .submenu {
+            .sub-menu {
                 position: absolute;
                 line-height: 1.5;
                 width: 250px;
@@ -43,8 +43,11 @@
                 }
                 li {
                     display: block;
+                    margin-bottom: 0px;
+                    color: $primaryColor;
                     a {
                         padding: 0.25rem 1.25rem;
+                        color: $primaryColor;
 
                         // second level menu hover/active
                         &:hover,
@@ -57,7 +60,7 @@
             } // end second level ul
             // Show second level menu on hover
             &:hover {
-                .submenu {
+                .sub-menu {
                     z-index: 10;
                     max-height: 1000px;
                     transition: all 0.2s ease-in-out;
