@@ -39,15 +39,14 @@
 		}
 		// top level font bigger
 		> li {
-			font-size: 1.1rem;
-			font-weight: bold;
+
 		}
 
 		// second level
 		ul {
 			text-indent: 1.5rem;
 			li {
-				font-size: 1rem;
+
 			}
 		}
 
@@ -87,24 +86,6 @@
 
 	}
 
-	// Reset/hide mega menu stuff
-	.mega {
-		.item {
-			display: none;
-		}
-		.item-info {
-			display: none;
-		}
-	}
-	.i-carts,
-	.i-consoles,
-	.i-shredinator,
-	.i-pdc,
-	.i-recycle,
-	.i-ewaste,
-	.i-accessories {
-		display: none;
-	}
 	&.open {
 		max-width: 100%;
 		transform: translateX(0);

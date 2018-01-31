@@ -4,10 +4,10 @@
 ?>
 
 <div class="mast page-mast">
-    <img src="<?php echo home_url(); ?>/wp-content/uploads/2017/08/mast-about-1.jpg" alt="">
+    <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/01/Banner5.jpg" alt="">
     <div class="container mast-overlay">
-        <h1>News</h1>
-        <!-- <h2>Secondary Title</h2> -->
+        <h1>What New? What’s The News?</h1>
+        <h2>Read All About It. If It’s New, It’s In Here.</h2>
     </div>
 </div>
 <div class="container">
@@ -42,6 +42,12 @@
             </div>
 
         </div>
+    </div>
+</div>
+<div class="container-fluid footer-contact-container dropshadow">
+    <div class="container">
+    <h3>DON’T WAIT. CONTACT US TODAY.</h3>
+    <?php echo do_shortcode( '[contact-form-7 id="258" title="Footer Form" html_class="footer-form"]' ); ?>
     </div>
 </div>
 

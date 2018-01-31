@@ -57,6 +57,12 @@
 
 }
 @media only screen and (max-width: $screen-md-min) {
+  .flex-header .mobile-icons {
+      display: block;
+  }
+  .phone, .get-quote{
+    display: none;
+  }
   .nav-toggle {
       display: block;
       margin-right: 2px;

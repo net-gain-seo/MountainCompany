@@ -1,7 +1,7 @@
 <?php /* Template Name: Single Product */ ?>
 <?php
     get_header();
-    $bg = home_url() . '/wp-content/uploads/2017/08/mast-carts-lg.jpg';
+    $bg = home_url() . '/wp-content/uploads/2018/01/Banner5.jpg';
 ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
