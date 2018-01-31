@@ -4,20 +4,14 @@
         margin-bottom: 1.5rem;
     }
 }
-
-.page-title {
-    background: $secondaryColor;
-    h1 {
-        margin: 0;
-        padding: 1.5rem 1rem;
-        text-align: center;
-        color: white;
-    }
-}
-
 .blog-listing {
     article {
         border-bottom: 2px solid $lightGray;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    article:last-child {
+        border-bottom: 0px solid $lightGray;
         padding-bottom: 2rem;
         margin-bottom: 2rem;
     }
@@ -38,31 +32,37 @@
         article {
             padding-bottom: 2rem;
             padding-right: 2rem;
-            border-bottom: 1px solid $lightGray;
-            border-right: 1px solid $lightGray;
+
         }
     }
 }
-
-.blog-title {
-    margin-bottom: 2rem;
-    h1 {
-        color: $secondaryColor;
-        margin-bottom: 0.25rem;
-    }
-    i {
-        margin-right: 0.5rem;
-        color: $primaryColor;
-    }
+.post-title{
+  a{
+    color: $primaryColor;
+  }
+  a:hover{
+    color: $secondaryColor;
+  }
 }
-
 .blog-sidebar {
     h2 {
-        font-weight: normal;
-        font-size: 1.1rem;
+      font-weight: normal;
+      font-family: inherit;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: $primaryColor;
     }
     .cat-item {
-        font-size: 1.05rem;
+
+    }
+    ul{
+      margin: 0px;
+      li{
+
+        a{
+          color: $primaryColor;
+        }
+      }
     }
 }
 

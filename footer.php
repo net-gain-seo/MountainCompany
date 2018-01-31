@@ -1,10 +1,4 @@
 </main>
-<div class="container-fluid footer-contact-container">
-    <div class="container">
-    <h3>DON’T WAIT. CONTACT US TODAY.</h3>
-    <?php echo do_shortcode( '[contact-form-7 id="258" title="Footer Form" html_class="footer-form"]' ); ?>
-    </div>
-</div>
 <footer class="container-fluid site-footer">
     <div class="container flex-footer">
       <div class="f-item logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo-footer.png" width="425px" alt=""></a></div>

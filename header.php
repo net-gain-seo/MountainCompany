@@ -22,7 +22,7 @@
         <div class="header-nav">
             <div class="container padding0">
                   <div class="mobile-icons">
-                    <a href="tel:18562904601" class="nav-phone">
+                    <a href="tel:18557924050" class="nav-phone">
                         <i class="fa fa-phone"></i>
                         <span>CALL</span>
                     </a>

@@ -367,7 +367,13 @@
         background-size: cover;
     }
 }
-
+.dropshadow {
+    -moz-box-shadow: 0px 5px 11px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 5px 11px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 11px 2px rgba(0,0,0,0.3);
+    z-index: 99;
+    position: relative;
+}
 .zindex{
   position: relative;
   z-index: 99;
@@ -388,8 +394,78 @@
   right: 40px;
   display: none;
   cursor: pointer;
+  z-index: 9999999999999999999;
 }
 .scrollToTop:hover{
   color: white;
 	text-decoration:none;
+}
+
+
+
+.testimonials-listing{
+  padding: 40px 0px;
+}
+.testimonials-listing:nth-child(even){
+background-color: white;
+}
+.testimonials-listing:nth-child(odd){
+background-color: $lightGray;
+}
+.page-id-168{
+  .slider-content p, .slider-content h1, .slider-content h3{
+    text-align: center;
+  }
+}
+
+
+.whyweclimbcenter{
+  text-align: center;
+  padding-top: 100px;
+  background-size: cover;
+  padding-bottom: 40px;
+  h3{
+    margin-bottom: 4rem;
+  }
+  a{
+    margin-top: 5rem;
+    display: inline-block;
+  }
+}
+.f-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 8rem 0;
+    p{
+      font-size: 2.5rem;
+      text-align: center;
+    }
+}
+.f-product .f-col {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background: #fff;
+    width: 30%;
+    p{
+      margin-bottom: 0px;
+    }
+    h2{
+      margin-bottom: 0px;
+    }
+}
+.f-product .name-title {
+    padding: 1rem 2rem;
+    background-color: $darkGray;
+    color: white;
 }

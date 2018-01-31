@@ -10,7 +10,7 @@
     	    if( has_post_thumbnail() ) {
     	        the_post_thumbnail();
     	    } else {
-    	        echo '<img src="'. home_url() . '/wp-content/uploads/2017/08/mast-products.jpg" />';
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/01/Banner5.jpg" />';
     	    }
 
             $mast_title       = get_post_meta( get_the_ID(), 'mast_title', true );

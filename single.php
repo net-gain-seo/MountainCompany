@@ -10,7 +10,7 @@
     if( has_post_thumbnail($postId) ) {
         the_post_thumbnail($postId);
     } else {
-        echo '<img src="' . home_url() . '/wp-content/uploads/2017/08/mast-about-1.jpg" alt="">';
+        echo '<img src="' . home_url() . '/wp-content/uploads/2018/01/Banner5.jpg" alt="">';
     }
     ?>
 </div>
@@ -25,7 +25,6 @@
                 <article>
                     <div class="blog-title">
                         <h1><?php the_title(); ?></h1>
-                        <small><i class="fa fa-calendar"></i> <em class="text-muted"><?php the_date(); ?></em></small>
                     </div>
 
                     <div class="blog-article">
