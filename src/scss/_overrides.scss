@@ -56,6 +56,9 @@
     color: black;
   }
 }
+.close-nav {
+    display: none;
+}
 .alignright {
     float: right;
     margin: 1rem 0 1rem 1rem;
@@ -72,7 +75,9 @@
 .sticky-header .modal {
     top: 70px;
 }
-
+.col *:last-child {
+    margin-bottom: 0;
+}
 @media screen and (max-width: 575px) {
     html {
         font-size: 12px; // rem's will scale down
