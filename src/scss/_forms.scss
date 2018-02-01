@@ -1,3 +1,75 @@
+.Contactpage{
+  form{
+      max-width: 460px;
+      float: none;
+      margin: auto;
+      padding-top: 25px;
+  }
+  p{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .button{
+    padding: 5px 60px;
+    float: left;
+  }
+  .wpcf7-textarea {
+      height: 12rem;
+  }
+}
+.page-id-221 .page-content{
+  overflow: hidden;
+}
+.Contactpage2{
+  .phone
+  {
+      margin-bottom: 6rem;
+    a {
+      font-weight: bold;
+      font-size: 3.5rem;
+      font-family: 'Oswald', sans-serif;
+      color: #68656E;
+    }
+  }
+  form{
+      max-width: 460px;
+      width: 100%;
+      float: none;
+      margin-left: 40px;
+      padding-top: 25px;
+  }
+  p{
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .button{
+    padding: 5px 60px;
+    float: left;
+  }
+  .wpcf7-textarea {
+      height: 12rem;
+  }
+  .col:first-child{
+    padding-right: 75px;
+    h2{
+      color: $primaryColor;
+      margin-bottom: 4rem;
+    }
+    h3{
+      font-family: 'Lato', 'Oswald', sans-serif
+    }
+  }
+  .greybackground{
+    background-color: $darkGray;
+    position: absolute;
+    width: 1000%;
+    height: 150%;
+    z-index: -1;
+    left: 0px;
+    top: -60px;
+  }
+}
 select,
 input[type="text"],
 input[type="email"],
@@ -12,11 +84,9 @@ textarea {
     border-radius: 0px;
     box-shadow: none;
     background-image: none;
-    // -webkit-appearance: none;
     font-family: inherit;
-    font-size: 0.875rem;
+    padding: 10px;
     padding-right: 0.5rem;
-    padding-left: 1.5rem;
     background-color: #fff;
     border: 1px solid #eeeeee;
     color: rgba(0, 0, 0, 0.75);

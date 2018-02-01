@@ -33,7 +33,6 @@ body.sticky-header{
         flex-flow: column wrap;
         align-items: flex-end;
         .title {
-            // flex: 1;
             text-align: center;
             padding: 0 60px 3px 16px; // adjust bottom alignment with the phone number
         }
@@ -95,9 +94,9 @@ body.sticky-header{
         left: auto;
         opacity: 1;
         img{
-          width: 160px;
+          width: 75px;
           position: absolute;
-          top: 0px;
+          top: 5px;
         }
     }
     .main-nav>ul>li {

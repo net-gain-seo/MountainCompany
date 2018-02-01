@@ -273,7 +273,11 @@
     margin-bottom: 0px;
   }
 }
-
+.mapsection{
+  width: 100%;
+  padding: 0px!important;
+  margin-bottom: -2px;
+}
 // The rest of the team grid
 .f-team-rest {
     display: flex;
