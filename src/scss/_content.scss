@@ -24,7 +24,6 @@
         color: $secondaryColor;
     }
 }
-
 .pcards {
     display: flex;
     flex-flow: row wrap;
@@ -78,7 +77,6 @@
         }
     }
 }
-
 /**
  * Products Main Page
  */
@@ -120,12 +118,10 @@
         }
     }
 }
-
 .pcard-title,
 .pcard-footer {
     font-family: 'Anton', sans-serif;
 }
-
 .pcard-title {
     font-size: 2.7rem;
     padding-top: 10px;
@@ -161,7 +157,6 @@
         }
     }
 }
-
 /** Single Product */
 .product-wrap {
     background: $primaryColor;
@@ -198,12 +193,10 @@
 }
 .fullhr{
   position: relative;
-  z-index: 9999999999999999;
+  z-index: 11111;
   margin: 0px;
   border-top: 1px solid white;
 }
-
-
 .passionsection{
   padding: 40px 0px;
   padding-bottom: 20px;
@@ -277,6 +270,10 @@
   width: 100%;
   padding: 0px!important;
   margin-bottom: -2px;
+}
+.flex-header .logo img, .flex-header .stickylogo img{
+  cursor: pointer;
+  z-index: 99991;
 }
 // The rest of the team grid
 .f-team-rest {
@@ -359,9 +356,7 @@
         }
     }
 }
-
 /** Container specific variations */
-
 // container-r on homepage
 .f-home {
     .f-pics {
@@ -404,9 +399,6 @@
   color: white;
 	text-decoration:none;
 }
-
-
-
 .testimonials-listing{
   padding: 40px 0px;
 }
@@ -421,8 +413,6 @@ background-color: $lightGray;
     text-align: center;
   }
 }
-
-
 .whyweclimbcenter{
   text-align: center;
   padding-top: 100px;
