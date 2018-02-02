@@ -41,8 +41,8 @@
     line-height: 45px;
     cursor: pointer;
     z-index: 9999999999;
-    background-color: darken($secondaryColor,10%);
-    border-bottom: 1px solid darken($secondaryColor,15%);
+    background-color: darken($primaryColor,10%);
+    border-bottom: 1px solid darken($primaryColor,15%);
     color: #fff;
     text-align: center;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -100,6 +100,13 @@
         padding-bottom: 10px;
         color: #2a3249;
     }
+  }
+  .footer-form .submit-container {
+      margin-top: 5px;
+      -webkit-box-flex: 0;
+      -ms-flex: 0;
+      flex: 0;
+      flex-basis: 47%;
   }
 }
 @media only screen and (max-width: $screen-md-min) {
@@ -270,44 +277,26 @@
       margin-top: 210px;
   }
 
-}
-
-@media only screen and (max-width: $screen-sm-max) {
-  .f-product .f-col {
-    background: #fff;
-    max-width: 400px;
-    width: 100%;
-    float: none;
-    margin: auto;
-    margin-top: 20px;
-}
-  .product-line .slick-list {
-      width: 240px;
-      margin: auto;
-  }
-  .mast {
-      &.page-mast,
-      &.product-mast {
-          .mast-overlay {
-              padding: 2rem 1rem;
-              width: 100%;
-              background: $primaryColor;
-              position: static;
-              transform: none;
-              // margin: 0 0 1px 0;
-              border-bottom: 1px solid rgba(white,0.75);
-              text-align: center;
-              h1 {
-                  font-size: 2.1875rem; // 35px
-              }
-              img {
-                  margin: 1.5rem auto 0 auto;
-              }
-          }
-          p:last-child {
-              // margin-bottom: 1.5rem;
-          }
-      }
+  footer{
+    .social {
+        float: none;
+        clear: both;
+        display: block;
+    }
+    .phone {
+        float: none;
+        clear: both;
+        display: block;
+        padding: 25px 0px;
+    }
+    .phone a {
+        font-weight: bold;
+        font-size: 3.5rem;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        float: none;
+        margin-top: 40px;
+    }
   }
   .flex-header {
       justify-content: center;
@@ -337,6 +326,55 @@
       .cat-social {
           .button {
               margin-right: 0.4rem !important;
+          }
+      }
+  }
+  .flex-header .logo {
+      -webkit-box-flex: 0;
+      -ms-flex: 0;
+      flex: none;
+      margin-bottom: 1px;
+      padding-left: 1rem;
+      float: none;
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+  .f-product .f-col {
+      background: #fff;
+      max-width: 400px;
+      width: 100%;
+      float: none;
+      margin: auto;
+      margin-top: 20px;
+  }
+  .product-line .slick-list {
+      width: 240px;
+      margin: auto;
+  }
+  .mast {
+      &.page-mast,
+      &.product-mast {
+          .mast-overlay {
+              padding: 2rem 1rem;
+              width: 100%;
+              background: $primaryColor;
+              position: static;
+              transform: none;
+              // margin: 0 0 1px 0;
+              border-bottom: 1px solid rgba(white,0.75);
+              text-align: center;
+              h1 {
+                  font-size: 2.1875rem; // 35px
+              }
+              img {
+                  margin: 1.5rem auto 0 auto;
+              }
+          }
+          p:last-child {
+              // margin-bottom: 1.5rem;
           }
       }
   }
@@ -374,6 +412,17 @@
 }
 
 @media only screen and (max-width: $screen-xsm-max) {
+    .Contactpage2 form {
+        max-width: 100%;
+        width: 100%;
+        float: none;
+        margin-left: .0px;
+        padding-top: 25px;
+    }
+    .flex-header .logo {
+        height: 200px;
+    }
+
     .flex-header .logo img {
         max-width: 425px;
         width: 100%;
@@ -399,8 +448,8 @@
       }
       .flex-header {
         display: block;
-        height: -webkit-fill-available;
-        max-height: 251px;
+        height: auto;
+        min-height: 273px;
           .stickylogo {
             display: none;
           }
@@ -433,5 +482,11 @@
     .g-recaptcha{
       transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;
     }
+
+}
+@media only screen and (max-width: 389px) {
+  .nav-phone, .nav-contact{
+    display: none!important;
+  }
 
 }
