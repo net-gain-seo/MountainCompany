@@ -78,6 +78,20 @@
 /**
  * Testimonials
  */
+ .testimonials-listing{
+   padding: 40px 0px;
+ }
+ .testimonials-listing:nth-child(even){
+ background-color: white;
+ }
+ .testimonials-listing:nth-child(odd){
+ background-color: $lightGray;
+ }
+ .page-id-168{
+   .slider-content p, .slider-content h1, .slider-content h3{
+     text-align: center;
+   }
+ }
 .testimonials-wrap {
     display: none;
     width: 100%;
@@ -164,41 +178,6 @@
     max-width: 88%;
     margin: auto;
 }
-
-
-
-
-.halfslider {
-    margin: 0;
-    .whitefade {
-        background: #ffffff; /* Old browsers */
-        background: -moz-linear-gradient(left, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-
-        h3 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 3rem;
-        }
-        a {
-            display: inline-block;
-            padding: 10px 45px;
-            color: #fff;
-            font-size: 20px;
-            transition: background-color 0.2s ease-in-out;
-
-            &:hover {
-                background-color: $primaryColor;
-                transition: background-color 0.2s ease-in-out;
-            }
-        }
-    }
-}
-
-
-
 .testimonials-b { // container
     padding: 25px 0;
     h1 {
@@ -250,7 +229,6 @@
         right: 0;
     }
 }
-
 /*****************Carousel*******************************/
 .carouselInner{
   text-align: center;
@@ -359,11 +337,9 @@ div.carousel-list div div img{
     }
     .slider-wrap {
           background-color: #102c3f;
-
           h5 {
               color: white;
           }
-
         .slider-content {
             position: static;
             .inner-content {

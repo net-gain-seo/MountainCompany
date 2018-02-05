@@ -1,7 +1,6 @@
 .btn {
     border-radius: 0;
 }
-
 .btn-main {
     color: #fff;
     background-color: $primaryColor;
@@ -12,7 +11,6 @@
         border-color: darken($primaryColor,8%);
     }
 }
-
 .btn-inverse { // white button with primaryColor text
     color: $primaryColor;
     background-color: #fff;
@@ -24,7 +22,6 @@
         box-shadow: 2px 2px 20px rgba(black,0.2);
     }
 }
-
 .container {
     padding-left: 0;
     padding-right: 0;
@@ -33,7 +30,6 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-
 // Lost some card styles across the board
 .card {
     border-radius: 0;
@@ -67,7 +63,6 @@
     float: left;
     margin: 1rem 1rem 1rem 0;
 }
-
 .wpcf7-not-valid-tip,
 .wpcf7-validation-errors {
     font-size: 0.9rem !important;
@@ -80,11 +75,7 @@
 }
 @media screen and (max-width: 575px) {
     html {
-        font-size: 12px; // rem's will scale down
-    }
-    .title,
-    .mast.page-mast .mast-overlay h1 {
-        font-size: 2.5rem;
+      //  font-size: 8px; // rem's will scale down
     }
     .container {
         padding-left: 15px !important;

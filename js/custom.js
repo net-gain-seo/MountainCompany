@@ -17,18 +17,15 @@
             $(".container-r .f-home .f-info").css('padding-left', '16px');
         }
 
-
         // Mobile or desktop nav
         if( windowWidth < 992 ) {
             $(nav).removeClass('main-nav').addClass('mobile-nav');
         } else {
             $(nav).addClass('main-nav').removeClass('mobile-nav');
         }
-
         return true;
-
     }
-
+
     function onHashChange() {
         if(window.location.hash) {
             var hash = window.location.hash;
@@ -42,7 +39,6 @@
             }, 500);
         }
     }
-
     $(document).ready(function() {
         doResizeActions();
         onHashChange();
@@ -75,19 +71,7 @@
             prevArrow: $(".slick-testimonial-prev"),
             nextArrow: $(".slick-testimonial-next")
         }).show();
-
-        $('.charity-carousel').slick({
-            infinite: true,
-            variableWidth: true,
-            centerMode: true,
-            autoplay: true,
-            autoplaySpeed: 0,
-            speed: 6000,
-            cssEase: 'linear',
-            arrows: false
-        }).show();
-
-        $('#productLine').slick({
+        $('#productLine').slick({
             infinite: true,
             slidesToShow: 4,
             variableWidth: true,
@@ -101,39 +85,40 @@
 
     });
 
+    
+        var isSticky = false;
+        var siteHeader = jQuery(".site-header");
+        var mainNav = jQuery("#mainNav");
+        jQuery(document).on("scroll", function() {
+            if ( jQuery(document).scrollTop() >= 191 ) {
+                if(!isSticky) {
+                    // jQuery(siteHeader).slideUp();
+                    jQuery("body").addClass("sticky-header");
+                    // jQuery(siteHeader).slideDown();
+                    isSticky = true;
+                }
+            } else {
+                if(isSticky) {
+                    // jQuery(siteHeader).slideUp();
+                    jQuery("body").removeClass("sticky-header");
+                    // jQuery(siteHeader).slideDown();
+                    isSticky = false;
+                }
+            }
+        });
 
-    var isSticky = false;
-    var siteHeader = jQuery(".site-header");
-    var mainNav = jQuery("#mainNav");
-    jQuery(document).on("scroll", function() {
-        if ( jQuery(document).scrollTop() >= 191 ) {
-            if(!isSticky) {
-                // jQuery(siteHeader).slideUp();
-                jQuery("body").addClass("sticky-header");
-                // jQuery(siteHeader).slideDown();
-                isSticky = true;
+        jQuery('#navToggle, #closeNav, #openNavOverlay, .get-quote, #megaMenu').on('click', function() {
+            if(jQuery(this).context.className != 'get-quote' && jQuery(this).context.id != 'megaMenu') {
+                jQuery(mainNav).toggleClass('open');
+                jQuery('#closeNav').toggleClass('open');
+                jQuery('body').toggleClass('no-scroll');
+            } else {
+                jQuery(mainNav).removeClass('open');
+                jQuery('#closeNav').removeClass('open');
+                jQuery('body').removeClass('no-scroll');
             }
-        } else {
-            if(isSticky) {
-                // jQuery(siteHeader).slideUp();
-                jQuery("body").removeClass("sticky-header");
-                // jQuery(siteHeader).slideDown();
-                isSticky = false;
-            }
-        }
-    });
-    jQuery('#navToggle, #closeNav, #openNavOverlay, .get-quote, #megaMenu').on('click', function() {
-        if(jQuery(this).context.className != 'get-quote' && jQuery(this).context.id != 'megaMenu') {
-            jQuery(mainNav).toggleClass('open');
-            jQuery('#closeNav').toggleClass('open');
-            jQuery('body').toggleClass('no-scroll');
-        } else {
-            jQuery(mainNav).removeClass('open');
-            jQuery('#closeNav').removeClass('open');
-            jQuery('body').removeClass('no-scroll');
-        }
-        // console.log(jQuery(this).context.className);
-    });
+            // console.log(jQuery(this).context.className);
+        });
 
 
     /////////////////////////////Smooth Scrolling For Scroll to top/////////////////////////////////////
@@ -169,6 +154,5 @@
             }
         }
     });
-
 
 })(jQuery);

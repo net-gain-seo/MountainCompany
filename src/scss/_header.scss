@@ -21,9 +21,6 @@ body.sticky-header{
         }
     }
     .stickylogo {
-        display: none;
-        position: absolute;
-        left: -999em;
         opacity: 0;
         transition: opacity 0.2s ease-in-out;
     }
@@ -58,9 +55,25 @@ body.sticky-header{
             text-align: right;
         }
     }
+    .header-nav{
+      width: 100%;
+      .container{
+        width: 100%;
+      }
+    }
     .mobile-icons{
       display: none;
     }
+}
+.stickylogo{
+  height: 0;
+   img {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+  }
 }
 .sticky-header {
     .site-header {
@@ -97,6 +110,8 @@ body.sticky-header{
           width: 75px;
           position: absolute;
           top: 5px;
+          height: auto;
+          overflow: visible;
         }
     }
     .main-nav>ul>li {
@@ -106,7 +121,6 @@ body.sticky-header{
         line-height: 60px;
     }
 }
-
 .mast {
     position: relative;
     overflow: hidden;
@@ -134,20 +148,10 @@ body.sticky-header{
     }
 }
 .product-mast {
-    // background image is inline
-    // background-size: cover;
-    // background-attachment: fixed;
-    // background-repeat: no-repeat;
-    // background-origin: content-box;
     .mast-overlay {
         top: auto;
         bottom: 15%;
         transform: translate(0, 0);
     }
     // background-position: right 237px;
-}
-.sticky-header {
-    .product-mast {
-        // background-position: right 60px;
-    }
 }
