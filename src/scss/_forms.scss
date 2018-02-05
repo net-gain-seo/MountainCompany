@@ -11,7 +11,7 @@
     margin-bottom: 1.5rem;
   }
   .button{
-    padding: 5px 60px;
+    padding: 10px 60px;
     float: left;
   }
   .wpcf7-textarea {
@@ -20,6 +20,9 @@
 }
 .page-id-221 .page-content{
   overflow: hidden;
+}
+.wpcf7-form-control-wrap{
+  margin-bottom: 1.5rem;
 }
 .Contactpage2{
   .phone
@@ -44,7 +47,7 @@
     margin-bottom: 1.5rem;
   }
   .button{
-    padding: 5px 60px;
+    padding: 10px 60px;
     float: left;
   }
   .wpcf7-textarea {
@@ -100,63 +103,6 @@ select {
 ::-webkit-input-placeholder {
     color: lighten($darkGray,10%);
 }
-
-.contact-page-form {
-    select,
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="password"],
-    input[type="number"],
-    input[type="search"],
-    textarea {
-        background-color: transparent;
-        border-color: #fff;
-        border-width: 2px;
-        color: #fff;
-        max-width: 80%;
-        font-size: 1rem; // 16px
-    }
-    option {
-        color: $darkGray;
-    }
-    ::-webkit-input-placeholder {
-        color: #fff;
-    }
-    textarea {
-        min-height: 6rem;
-    }
-    .submit-container {
-        display: flex;
-        flex-flow: row wrap;
-        p {
-            margin: 0;
-            padding: 0;
-            flex-basis: 0;
-        }
-        .btn {
-            font-family: "Oswald", sans-serif;
-            font-weight: bold;
-            padding-left: 2.5rem;
-            padding-right: 2.5rem;
-            margin-left: 16px;
-        }
-        > .wpcf7-form-control-wrap {
-            // outline: 1px solid #000;
-            width: 206px;
-            height: 51px;
-            overflow: hidden;
-        }
-        .page-recaptcha {
-            transform: scale(0.68);
-            transform-origin: 0px 0px;
-        }
-    }
-    .wpcf7-not-valid-tip {
-        color: #ff0;
-    }
-}
-
 .popover-form {
     width: 100%;
     padding: 0px 10px;
@@ -183,7 +129,7 @@ select {
     }
     .submit-container {
         .button {
-            padding: 2px 50px;
+            padding: 10px 50px;
             float: left;
             clear: both;
         }
@@ -232,7 +178,7 @@ select {
         flex: 1 0 100%;
         margin-top: 5rem;
         .button{
-          padding: 5px 60px;
+          padding: 10px 60px;
         }
         // submit button container inserted by CF7
         > p {
@@ -281,14 +227,13 @@ select {
         margin: 2rem auto;
     }
 }
-
 @media screen and (max-width: 1199px) {
     .footer-form {
         p {
             flex-basis: 23%
         }
         > .wpcf7-form-control-wrap { // recaptcha container
-            margin: 24px 1050px;
+            margin: 5px 1050px;
             width: 193px;
             outline: none;
             flex: 0 1 100%;
@@ -299,38 +244,6 @@ select {
         }
     }
 }
-
-
-@media screen and (max-width: 991px) {
-    .contact-page-form {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        p {
-            flex-basis: 50%;
-            padding: 0 0.5rem;
-            &.textarea {
-                flex-basis: 100%;
-            }
-        }
-        .submit-container {
-            padding: 0 0.5rem;
-            flex-basis: 100%;
-        }
-
-        select,
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="password"],
-        input[type="number"],
-        input[type="search"],
-        textarea {
-            max-width: 100%;
-        }
-    }
-}
-
 @media screen and (max-width: 767px) {
     .footer-contact-container {
         .container {
@@ -345,7 +258,6 @@ select {
         }
     }
 }
-
 @media screen and (max-width: 459px) {
     .submit-container {
         p {
@@ -353,43 +265,8 @@ select {
             text-align: center;
         }
     }
-
     .footer-form {
         p {
-            flex-basis: 100%;
-        }
-    }
-}
-
-@media screen and (max-width: 412px) {
-    .footer-form {
-        > .wpcf7-form-control-wrap {
-            // margin: 32px 24px 0 0;
-            // outline: none;
-        }
-        .submit-container {
-            // flex: 1 0 100%;
-        }
-    }
-}
-
-@media screen and (max-width: 445px) {
-    .contact-page-form {
-        .submit-container {
-            justify-content: center;
-            padding: 0;
-            .btn {
-                margin-top: 1.5rem;
-            }
-            > .wpcf7-form-control-wrap {
-                margin-left: 17px;
-            }
-        }
-    }
-}
-@media screen and (max-width: 491px) {
-    .contact-page-form {
-        > p {
             flex-basis: 100%;
         }
     }
