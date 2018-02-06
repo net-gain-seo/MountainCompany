@@ -26,6 +26,7 @@
         }
     }
 }
+
 .single-post {
     .blog-content {
         article {
@@ -64,6 +65,7 @@
       }
     }
 }
+
 .next-prev {
     margin-top: 1.5rem;
     display: flex;
@@ -96,7 +98,8 @@
         }
     }
 }
-@media only screen and (max-width: $screen-md-min) {
+
+@media screen and (max-width: 991px) {
     .blog-sidebar {
         margin-top: 2rem;
         padding-top: 2rem;
@@ -121,5 +124,15 @@
         float: none !important;
         display: block;
         margin: 0 auto 1.5rem auto !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .single-post {
+        .blog-content {
+            article {
+                // padding: 1.5rem;
+            }
+        }
     }
 }

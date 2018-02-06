@@ -38,6 +38,68 @@
     flex-flow: row wrap;
     align-items: stretch;
     background: #fff;
+    margin: 1rem 0;
+}
+.pcard-block { // right side of card
+    flex: 1 0;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1.5rem;
+}
+.pcard-text {
+    flex: 1 1 auto;
+    line-height: 1.25;
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.pcard-footer {
+    background: none;
+    justify-content: flex-end;
+    a {
+        position: relative;
+        color: $primaryColor;
+        &:hover {
+            color: $secondaryColor;
+            &:after {
+                transform: translateX(80%);
+            }
+        }
+        // @todo maybe move this to a mixin
+        &:after {
+            content: "\f101";
+            font-family: "fontawesome";
+            display: inline-block;
+            transform: translateX(50%);
+            transition: transform 0.2s ease-in-out;
+        }
+    }
+}
+/**
+ * Products Main Page
+ */
+.p-products {
+    h1 {
+        margin-bottom: 1rem;
+        color: $secondaryColor;
+    }
+}
+.pcards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 3rem;
+}
+.pcard {
+    // flex: 1 0 48%;
+    max-width: 48%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    background: #fff;
     margin: 2rem 0;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
@@ -337,6 +399,20 @@
   color: white;
 	text-decoration:none;
 }
+.testimonials-listing{
+  padding: 40px 0px;
+}
+.testimonials-listing:nth-child(even){
+background-color: white;
+}
+.testimonials-listing:nth-child(odd){
+background-color: $lightGray;
+}
+.page-id-168{
+  .slider-content p, .slider-content h1, .slider-content h3{
+    text-align: center;
+  }
+}
 .whyweclimbcenter{
   text-align: center;
   padding-top: 100px;
@@ -369,21 +445,21 @@
       font-size: 2.5rem;
       text-align: center;
     }
-    .f-col {
-        margin-bottom: 5%;
-        margin-top: 5%;
-        background: #fff;
-        width: 30%;
-        p{
-          margin-bottom: 0px;
-        }
-        h2{
-          margin-bottom: 0px;
-        }
+}
+.f-product .f-col {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background: #fff;
+    width: 30%;
+    p{
+      margin-bottom: 0px;
     }
-    .name-title {
-        padding: 1rem 2rem;
-        background-color: $darkGray;
-        color: white;
+    h2{
+      margin-bottom: 0px;
     }
+}
+.f-product .name-title {
+    padding: 1rem 2rem;
+    background-color: $darkGray;
+    color: white;
 }

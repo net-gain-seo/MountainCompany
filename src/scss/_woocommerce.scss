@@ -1,0 +1,40 @@
+.woocommerce div.product form.cart {
+    margin-bottom: 2em;
+    margin-top: 2rem;
+}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce input.button, .woocommerce div.product form.cart .button{
+  background-color: $secondaryColor!important;
+  font-weight: normal;
+  color: white;
+}
+.woocommerce-product-gallery__image{
+  margin-bottom: 1rem;
+}
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    float: right;
+    width: 28%;
+    max-width: 100%;
+}
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    float: left;
+    width: 70%;
+    max-width: 100%;
+}
+@media only screen and (max-width: $screen-md-min) {
+
+  .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+      float: right;
+      width: 100%;
+      max-width: 100%;
+  }
+  .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+      float: left;
+      width: 100%;
+      max-width: 100%;
+  }
+}
+@media only screen and (max-width: $screen-xsm-min) {
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce-page[class*=columns-] ul.products li.product, .woocommerce[class*=columns-] ul.products li.product{
+      width: 100%;
+}
+}
