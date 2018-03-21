@@ -363,6 +363,7 @@
           .mast-overlay {
               padding: 2rem 1rem;
               width: 100%;
+              max-width: 100%;
               background: $primaryColor;
               position: static;
               transform: none;
@@ -371,6 +372,7 @@
               text-align: center;
               h1 {
                   font-size: 2.1875rem; // 35px
+                  margin-bottom: 0px;
               }
               img {
                   margin: 1.5rem auto 0 auto;

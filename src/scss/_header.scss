@@ -54,13 +54,14 @@ body.sticky-header{
             // flex-flow: column wrap;
             text-align: right;
         }
-        .header-nav{
-          width: 100%;
-          .container{
-            width: 100%;
-          }
-        }
     }
+    .header-nav{
+      width: 100%;
+      .container{
+        width: 100%;
+      }
+    }
+    
     .mobile-icons{
       display: none;
     }
@@ -75,7 +76,7 @@ body.sticky-header{
 .sticky-header {
     .site-header {
         position: fixed;
-        z-index: 999999;
+        z-index: 99989;
         left: 0;
         top: 0;
         width: 100%;

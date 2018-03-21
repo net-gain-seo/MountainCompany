@@ -31,7 +31,7 @@
                 <?php echo do_shortcode( '[contact-form-7 id="254" title="Popover Form" html_class="popover-form"]' ); ?>
             </div>
             <div class="modal-footer hidden-sm-up">
-                <button type="button" class="close popover-btn-cancel" data-dismiss="modal" aria-label="Close"><span>Cancel</span> &times;</button>
+                <button type="button" class="button" data-dismiss="modal" aria-label="Close"><span>Cancel</span> &times;</button>
             </div>
         </div>
     </div>
