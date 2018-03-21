@@ -30,6 +30,8 @@ $fsH4            : $fsBody; // 20px
 @import "base";
 @import "header";
 @import "forms";
+@import "gallery";
+@import "woocommerce";
 @import "navigation";
 @import "mobile_nav";
 @import "content";
@@ -39,5 +41,4 @@ $fsH4            : $fsBody; // 20px
 @import "slides";
 @import "overrides";
 @import "ie";
-@import "woocommerce";
 @import "responsive";

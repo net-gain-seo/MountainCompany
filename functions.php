@@ -182,4 +182,5 @@ function get_the_post_id() {
 }
 
 include(TEMPLATEPATH.'/admin/custom_shortcodes.php');
-include(TEMPLATEPATH.'/admin/post_types/slider/index.php');
+//include(TEMPLATEPATH.'/admin/post_types/slider/index.php');
+//include(TEMPLATEPATH.'/admin/post_types/gallery/index.php');
